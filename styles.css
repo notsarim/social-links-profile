@@ -50,19 +50,19 @@ li {
   width: 100%;
 }
 
-a:hover {
+.social-link:hover {
   outline: 1px solid var(--green);
   color: var(--green);
   cursor: pointer;
   box-shadow: 1px 1px 15px var(--green);
 }
 
-a:active {
+.social-link:active {
   background-color: var(--green);
   color: var(--grey-900);
 }
 
-a {
+.social-link {
   display: block;
   text-decoration: none;
   color: var(--white);
