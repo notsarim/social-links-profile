@@ -18,7 +18,13 @@
 
 body {
   background-color: var(--grey-900);
-  font-family: Inter;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Arial,
+    sans-serif;
   color: var(--white);
 }
 
@@ -50,7 +56,8 @@ li {
   width: 100%;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus-visible {
   outline: 1px solid var(--green);
   color: var(--green);
   cursor: pointer;
@@ -70,14 +77,12 @@ li {
   width: 100%;
   padding: 10px;
   background-color: var(--grey-700);
-  width: 100%;
   text-align: center;
   border-radius: 5px;
-  box-shadow: 0, 0, 0, 0;
 
-  transition-property: box-shadow;
-  transition-duration: 600ms;
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition:
+    color 200ms,
+    box-shadow 600ms;
 }
 
 .card {
