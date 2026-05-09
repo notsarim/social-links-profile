@@ -1,0 +1,131 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 90%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: var(--grey-900);
+  font-family: Inter;
+  color: var(--white);
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+li {
+  margin: 0;
+  width: 100%;
+}
+
+a:hover {
+  outline: 1px solid var(--green);
+  color: var(--green);
+  cursor: pointer;
+  box-shadow: 1px 1px 15px var(--green);
+}
+
+a:active {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--grey-700);
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0, 0, 0, 0;
+
+  transition-property: box-shadow;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card {
+  background-color: var(--grey-800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 15px;
+  gap: 30px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 5rem;
+}
+
+.bio-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.address {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.occupation {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.social-links {
+  width: 100%;
+}
